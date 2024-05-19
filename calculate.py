@@ -13,7 +13,7 @@ def calculate_spending(filename):
             if amount.isdigit() or (amount.startswith('-') and amount[1:].isdigit()):
                 amount = int(amount)  # to integer
 
-                if action == "mission reward":
+                if action == "ミッション報酬":
                     total_spending -= abs(amount)
                 elif action == "期限切れゴールド削除":
                     total_spending += abs(amount)
@@ -21,11 +21,11 @@ def calculate_spending(filename):
                     total_spending += abs(amount)
                 # if it is positive: skip
             else:
-                print(f"Cannot read the number：{amount}")
+                print(f"Cannot read the number: {amount}")
 
     return total_spending
 
 # main
 file_path = 'purchase_history.csv'  # CSV file path
 total_spending = calculate_spending(file_path)
-print(f"total expenditure：{total_spending}")
+print(f"total spending: {total_spending}")
