@@ -5,7 +5,8 @@ def save_cookies():
     driver = webdriver.Chrome()
     driver.get("https://www.showroom-live.com/")
     # user login
-    while input("Press OK when you finish login ") != "ok":
+    print("Press OK when you finish login")
+    while input() != "ok":
         print("Please enter 'OK'!")
     cookies = driver.get_cookies()
     with open("cookies.txt", "w") as file:
