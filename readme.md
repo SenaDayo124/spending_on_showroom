@@ -19,10 +19,13 @@
 1. Update your Google Chrome to the lastest version
 2. Open Powershell if you are Window users or whatever
 3. **For the first time**: Run the **initialisation.py**
-4. Run **collect_purchase_history.py**
-5. If you need to calculate the amount spend, run **calculate.py**
+4. Remember go to the purchase page and change the language to Japanese
+5. Press "ok" on the console if you have finish
+6. Run **collect_purchase_history.py**
+7. If you need to calculate the amount spend, run **calculate.py**
 
 ### Special notices
 
 * Please set the language to Japanese in showroom
+
 # spending_on_showroom
